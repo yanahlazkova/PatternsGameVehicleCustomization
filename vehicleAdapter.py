@@ -10,7 +10,7 @@ class ExternalVehicleAdapter:
         specs = self.external_data['specs']
         extras = self.external_data.get('extras', [])
         return Vehicle(
-            vehicle_type=vehicle_type,
+            vehicle_type='type: ' + vehicle_type,
             max_speed=specs['speed'],
             fuel_capacity=specs['fuel_capacity'],
             fuel_efficiency=specs['fuel_efficiency'],
